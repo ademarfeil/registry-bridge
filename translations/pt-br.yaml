@@ -1,0 +1,143 @@
+registry-bridge:
+  extension-name: Registry Bridge
+  common:
+    install: Instalar
+    uninstall: Desinstalar
+    approve: Aprovar
+    reject: Rejeitar
+    details: Detalhes
+    publish: Publicar
+    about: Sobre
+    about-extension: Sobre {extensionName}
+  component:
+    extension-details-modal:
+      extension: Extensão
+      author: Autor
+      description: Descrição
+      overview: Visão geral
+      details: Detalhes
+      version: Versão
+      updated: Atualizado
+      website: Site
+      self-managed: Autogerenciado
+      self-managed-help-text: Uma extensão autogerenciada é projetada para usuários que hospedam o Fleetbase em seus próprios servidores, fora do ambiente de nuvem/SaaS. Essas extensões exigem instalação e configuração manual. Se você estiver usando o Fleetbase em uma instância auto-hospedada, poderá usar essas extensões para adicionar recursos adicionais. No entanto, elas não estão disponíveis para usuários de nuvem/SaaS.
+      self-hosted-install: Instalação self-hosted
+      self-hosted-install-help-text: Ver instruções de instalação self-hosted.
+    extension-pending-publish-viewer:
+      content-panel-title: Extensões aguardando publicação
+      focused-extension-title: >
+        Detalhes de {extensionName}
+      download-bundle: Baixar bundle
+      view-details: Ver detalhes
+      publish: Publicar
+      no-extensions-awaiting-publish: Nenhuma extensão aguardando publicação
+    extension-reviewer-control:
+      content-panel-title: Extensões aguardando revisão
+      focused-extension-title: >
+        Detalhes de {extensionName}
+      approve-confirm-title: Tem certeza de que deseja aprovar esta extensão?
+      approve-confirm-body: Esta extensão deve ser testada minuciosamente em ambientes de desenvolvimento e teste, além de verificada quanto à conformidade e segurança. Após a aprovação, a extensão precisará ser publicada manualmente no registro.
+      decline-confirm-title: Tem certeza de que deseja rejeitar esta extensão?
+      decline-confirm-body: Esta extensão será rejeitada, mas o autor terá a oportunidade de fazer correções e reenviar para revisão.
+      download-bundle: Baixar bundle
+      view-details: Ver detalhes
+      approve: Aprovar
+      reject: Rejeitar
+      no-extensions-awaiting-review: Nenhuma extensão aguardando revisão
+  installed:
+    title: Extensões instaladas
+  purchased:
+    title: Extensões adquiridas
+  developers:
+    payments:
+      manage-account: Gerenciar conta de recebimento
+      no-account-warning: Você deve concluir o processo de cadastro no Stripe antes de acessar as configurações da conta.
+      settings:
+        title: Gerenciar conta de recebimento
+        description: Gerencie os detalhes da sua conta Stripe, incluindo informações da empresa e contas bancárias para recebimento.
+        loading: Carregando gerenciamento da conta...
+    extensions:
+      extensions: Extensões
+      create-new-extension: Criar nova extensão
+      new-extension: Nova extensão
+      extension: Extensão
+      submission: Submissão
+      details: Detalhes
+      bundles: Bundles
+      monetize: Monetizar
+      explore:
+        explore-extensions: Explorar extensões
+        explore-category-extensions: >
+          Extensões de {categoryName}
+      extension-form:
+        package-name: Nome do pacote
+        package-json-name: Nome do package.json
+        composer-json-name: Nome do composer.json
+        submission-success-message: Extensão enviada e aguardando revisão.
+        extension-category: Categoria
+        extension-category-help-text: Selecione a categoria na qual os usuários poderão encontrar sua extensão.
+        extension-select-category: Selecionar categoria
+        extension-name: Nome da extensão
+        extension-icon: Ícone da extensão
+        upload-extension-icon: Enviar ícone
+        extension-description: Descrição
+        extension-tags: Tags
+        extension-add-tags: Adicionar palavras-chave e tags
+        extension-promotional-text: Texto promocional
+        details-content-block: Detalhes da extensão
+        extension-listing-details: Detalhes da listagem
+        extension-subtitle: Subtítulo
+        extension-website-url: URL do site
+        extension-repo-url: URL do repositório
+        extension-support-url: URL de suporte
+        extension-privacy-policy-url: URL da política de privacidade
+        extension-tos-url: URL dos termos de serviço
+        extension-primary-language: Idioma principal
+        extension-version: Versão
+        extension-copyright: Direitos autorais
+        extension-copyright-help-text: Insira o aviso de direitos autorais da sua extensão. Normalmente inclui o ano e o nome do proprietário ou empresa.
+        extension-payment-required: Pagamento obrigatório
+        extension-payment-required-help-text: Define se pagamento ou assinatura é necessário para instalar esta extensão.
+        extension-price: Preço
+        extension-price-help-text: Especifique o preço normal da extensão. Este é o custo padrão para acessar ou comprar a extensão.
+        extension-sale-price: Preço promocional
+        extension-sale-price-help-text: Se a extensão estiver com desconto, informe o preço promocional aqui. Deve ser menor que o preço normal.
+        extension-subscription-required: Assinatura obrigatória
+        extension-subscription-required-help-text: Define se o usuário precisa de assinatura para instalar e usar esta extensão.
+        extension-subscription-billing-period: Período de cobrança da assinatura
+        extension-subscription-billing-period-placeholder: Selecionar período de cobrança
+        extension-subscription-billing-period-help-text: Especifique o período de cobrança (mensal, trimestral, anual ou outro).
+        extension-subscription-amount: Valor da assinatura
+        extension-subscription-amount-help-text: Informe o valor padrão cobrado pela assinatura.
+        extension-subscription-model: Modelo de assinatura
+        extension-subscription-model-help-text: Define o tipo de cobrança (fixa, escalonada ou baseada em uso).
+        extension-subscription-tiers: Níveis de assinatura
+        extension-subscription-tiers-help-text: Defina os diferentes níveis de preço da assinatura, incluindo valores, recursos ou limitações.
+        extension-name-help-text: Informe o nome oficial da extensão.
+        extension-icon-help-text: Envie um ícone representando a extensão.
+        extension-description-help-text: Forneça uma descrição detalhada da extensão e seus recursos.
+        extension-tags-help-text: Adicione palavras-chave relevantes para facilitar a busca.
+        extension-promotional-text-help-text: Escreva um texto promocional destacando os diferenciais da extensão.
+        extension-subtitle-help-text: Forneça um subtítulo curto com contexto adicional.
+        extension-website-url-help-text: Informe a URL do site oficial ou página do produto.
+        extension-repo-url-help-text: Informe a URL do repositório de código.
+        extension-support-url-help-text: Informe onde os usuários podem obter suporte.
+        extension-privacy-policy-url-help-text: Link para a política de privacidade.
+        extension-tos-url-help-text: Link para os termos de serviço.
+        extension-primary-language-help-text: Informe o idioma principal da extensão.
+        extension-version-help-text: Informe a versão atual da extensão.
+        extension-payment-details: Detalhes de pagamento
+        extension-screenshots: Capturas de tela
+        upload-screenshots: Enviar capturas de tela
+        submit-for-review: Enviar para revisão
+        extension-bundle: Bundle da extensão
+        extension-upload-bundle: Enviar bundle da extensão
+        details: Detalhes
+        bundle-id: ID do bundle
+        bundle-id-help-text: Identificador do bundle publicado atualmente.
+        extension-id: ID da extensão
+        extension-id-help-text: Identificador único da extensão.
+        bundles: Bundles
+        upload-new-bundle: Enviar novo bundle
+        self-managed: Autogerenciado
+        self-managed-help-text: Ative esta opção se o módulo for destinado apenas a instâncias self-hosted. Ao selecionar, o módulo não estará disponível na versão cloud/SaaS e deverá ser instalado manualmente pelo usuário.
